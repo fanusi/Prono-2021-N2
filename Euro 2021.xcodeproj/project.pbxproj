@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -30,6 +30,7 @@
 		AE54E5E8266516280099C44E /* UIScrollView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE54E5E5266516280099C44E /* UIScrollView+.swift */; };
 		AE54E5EE266516FC0099C44E /* EK 2021 xcode.xlsx in Resources */ = {isa = PBXBuildFile; fileRef = AE54E5EC266516FB0099C44E /* EK 2021 xcode.xlsx */; };
 		AE54E5EF266516FC0099C44E /* EK 2021 xcode - simul.xlsx in Resources */ = {isa = PBXBuildFile; fileRef = AE54E5ED266516FC0099C44E /* EK 2021 xcode - simul.xlsx */; };
+		AECE29B9266FAE0600ED5415 /* EK 2021 xcode2.xlsx in Resources */ = {isa = PBXBuildFile; fileRef = AECE29B8266FAE0600ED5415 /* EK 2021 xcode2.xlsx */; };
 		B5AD08C3C9A21F9ED75C5950 /* Pods_Euro_2021Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8F4B429FE8E27276A47177 /* Pods_Euro_2021Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +86,7 @@
 		AE54E5E5266516280099C44E /* UIScrollView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIScrollView+.swift"; path = "Support/UIScrollView+.swift"; sourceTree = SOURCE_ROOT; };
 		AE54E5EC266516FB0099C44E /* EK 2021 xcode.xlsx */ = {isa = PBXFileReference; lastKnownFileType = file; name = "EK 2021 xcode.xlsx"; path = "Support/EK 2021 xcode.xlsx"; sourceTree = SOURCE_ROOT; };
 		AE54E5ED266516FC0099C44E /* EK 2021 xcode - simul.xlsx */ = {isa = PBXFileReference; lastKnownFileType = file; name = "EK 2021 xcode - simul.xlsx"; path = "Support/EK 2021 xcode - simul.xlsx"; sourceTree = SOURCE_ROOT; };
+		AECE29B8266FAE0600ED5415 /* EK 2021 xcode2.xlsx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "EK 2021 xcode2.xlsx"; sourceTree = SOURCE_ROOT; };
 		E6B117D8D6AD434CAB847FD8 /* Pods-Euro 2021.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Euro 2021.debug.xcconfig"; path = "Target Support Files/Pods-Euro 2021/Pods-Euro 2021.debug.xcconfig"; sourceTree = "<group>"; };
 		FC837DB1115DB8AF0664B7F1 /* Pods-Euro 2021.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Euro 2021.release.xcconfig"; path = "Target Support Files/Pods-Euro 2021/Pods-Euro 2021.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,6 +154,7 @@
 		AE54E589266507620099C44E /* Euro 2021 */ = {
 			isa = PBXGroup;
 			children = (
+				AECE29B8266FAE0600ED5415 /* EK 2021 xcode2.xlsx */,
 				AE54E58A266507620099C44E /* AppDelegate.swift */,
 				AE54E5ED266516FC0099C44E /* EK 2021 xcode - simul.xlsx */,
 				AE54E5EC266516FB0099C44E /* EK 2021 xcode.xlsx */,
@@ -204,7 +207,6 @@
 				8A5E128AF0D7C19D00AC3B53 /* Pods-Euro 2021Tests.debug.xcconfig */,
 				09580204EA1FFCDA41D07CF5 /* Pods-Euro 2021Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -318,6 +320,7 @@
 			files = (
 				AE54E59A266507620099C44E /* LaunchScreen.storyboard in Resources */,
 				AE54E597266507620099C44E /* Assets.xcassets in Resources */,
+				AECE29B9266FAE0600ED5415 /* EK 2021 xcode2.xlsx in Resources */,
 				AE54E5EF266516FC0099C44E /* EK 2021 xcode - simul.xlsx in Resources */,
 				AE54E592266507620099C44E /* Main.storyboard in Resources */,
 				AE54E5EE266516FC0099C44E /* EK 2021 xcode.xlsx in Resources */,
