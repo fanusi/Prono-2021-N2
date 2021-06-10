@@ -63,7 +63,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     //var PronosB = [[Pronostiek]]()
     // PronosB contains guesses of all players
     
-    let pr:Int = 3
+    let pr:Int = 5
     //Number of players
     
     var lastgame1: Int = 0
@@ -133,10 +133,14 @@ class ViewController: UIViewController, UIScrollViewDelegate {
 //            qual16_3 = ["Finland", "Wales", "Spain", "N Macedonia"]
             
             qual16 = qualbest2()
+            
+            print("rechtstreeks")
+            print(qual16)
+            
             qual16_3 = qualbest3()
             
-//            print("Beste derde")
-//            print(qual16_3)
+            print("Beste derde")
+            print(qual16_3)
             
             //Only load prediction once
             if dummy2 == 0 {
@@ -591,8 +595,12 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             
             if StandingsA[i].rank == 1 || StandingsA[i].rank == 2 {
                 
-                let qteam: String = StandingsA[i].team
-                qbest.append(qteam)
+                if StandingsA[i].group != 7 {
+                    
+                    let qteam: String = StandingsA[i].team
+                    qbest.append(qteam)
+                    
+                }
                 
             }
             
@@ -610,7 +618,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         
         for i in 0...StandingsA.count-1 {
             
-            if StandingsA[i].group == 7 {
+            if StandingsA[i].group == 7 && StandingsA[i].rank < 5  {
                 
                 let qteam: String = StandingsA[i].team
                 qbest.append(qteam)
