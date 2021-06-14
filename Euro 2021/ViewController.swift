@@ -63,7 +63,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     //var PronosB = [[Pronostiek]]()
     // PronosB contains guesses of all players
     
-    let pr:Int = 5
+    let pr:Int = 17
     //Number of players
     
     var lastgame1: Int = 0
