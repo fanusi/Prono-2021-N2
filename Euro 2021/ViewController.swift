@@ -410,6 +410,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
                                 newFixture.home_Goals = Int16(niveau1.api.fixtures[n].goalsHomeTeam)
                                 newFixture.away_Goals = Int16(niveau1.api.fixtures[n].goalsAwayTeam)
                                 newFixture.status = niveau1.api.fixtures[n].statusShort
+                                newFixture.elapsed = String(niveau1.api.fixtures[n].elapsed)
                                 
                                 let timeStamp = Double(niveau1.api.fixtures[n].event_timestamp)
                                 let unixTimeStamp: Double = Double(timeStamp) / 1.0
@@ -478,6 +479,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
                                 newFixture.away_Team = "-"
                                 newFixture.fulltime = "-"
                                 newFixture.time = ""
+                                newFixture.elapsed = ""
                                                                 
                             }
                                 
@@ -714,9 +716,12 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         if livegames.count == 0 {
             label3.text = "Recent"
         } else if livegames.count == 1  {
-            label3.text = "Prono"
+            label3.text = PronosA[livegames[0].index].elapsed! + "'"
+            label3.backgroundColor = .systemGray5
+            label3.textColor = .systemRed
         } else if livegames.count == 2 {
-            label3.text = "P1"
+            label3.text = PronosA[livegames[0].index].elapsed! + "'"
+            label3.textColor = .systemRed
         }
         
         label3.font = UIFont.boldSystemFont(ofSize: 15.0)
@@ -726,12 +731,14 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         view1.addSubview(label3)
         
         label4.textAlignment = NSTextAlignment.center
-        label4.text = "P2"
+        label4.text = ""
         label4.font = UIFont.boldSystemFont(ofSize: 15.0)
         label4.adjustsFontSizeToFitWidth = true
         //label4.textColor = .black
         
         if livegames.count == 2 {
+            label4.text = PronosA[livegames[1].index].elapsed! + "'"
+            label4.textColor = .systemRed
             view1.addSubview(label4)
         }
         
